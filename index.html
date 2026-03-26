@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StanckDEV 2026 | La Guida</title>
+    
+    <meta name="description" content="Scopri i migliori editor di codice del 2026. Guida onesta per ogni esigenza: Videogiochi, Web, Bot e Cybersecurity.">
+    <meta name="google-site-verification" content="googlebddd4a29e47ba6ec.html">
+
+    <meta property="og:title" content="StanckDEV 2026 | Guida ai Migliori Editor">
+    <meta property="og:description" content="Non scegliere un editor a caso. Scopri i migliori strumenti del 2026 con link diretti al download.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stanckdev-consigliare-editor.netlify.app/">
+    <meta property="og:site_name" content="StanckDEV">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Fira+Code:wght@400;500&display=swap');
+
+        :root {
+            --bg: #ffffff;
+            --sidebar-bg: #f8f8f8;
+            --text-main: #1a1a1a;
+            --text-muted: #666666;
+            --accent: #000000;
+            --border: #e5e5e5;
+            --highlight: #000000;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* --- SIDEBAR DESKTOP --- */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            padding: 60px 30px;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            z-index: 100;
+        }
+
+        .logo { font-weight: 700; font-size: 1.3rem; margin-bottom: 40px; letter-spacing: -1px; }
+
+        .nav-links { list-style: none; }
+        .nav-links li { margin-bottom: 15px; }
+        .nav-links a { 
+            text-decoration: none; 
+            color: var(--text-muted); 
+            font-size: 0.9rem; 
+            transition: 0.3s; 
+            display: block;
+            padding: 5px 0;
+        }
+
+        .nav-links a.active { 
+            color: var(--accent); 
+            font-weight: 700; 
+            padding-left: 10px;
+            border-left: 2px solid var(--accent);
+        }
+
+        /* --- CONTENUTO --- */
+        main { flex: 1; padding: 80px 8%; max-width: 1000px; }
+
+        header { margin-bottom: 100px; }
+        header h1 { font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; letter-spacing: -2px; margin-bottom: 20px; }
+        header p { font-size: 1.2rem; color: var(--text-muted); line-height: 1.6; }
+
+        section { margin-bottom: 60px; padding-top: 20px; }
+        .category-info { font-family: 'Fira Code', monospace; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 10px; display: block; }
+        h2 { font-size: 2.2rem; margin-bottom: 40px; letter-spacing: -1px; border-bottom: 3px solid var(--accent); display: inline-block; }
+
+        .editor-entry { margin-bottom: 40px; padding: 30px; border: 1px solid var(--border); border-radius: 2px; }
+        h3 { font-size: 1.8rem; margin-bottom: 15px; }
+        .desc-parlata { font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px; color: #333; }
+        .pro-tip { background: #fffbe6; padding: 15px; border-left: 3px solid #f1c40f; font-size: 0.95rem; font-style: italic; margin-top: 15px; }
+
+        /* Stile per il link di installazione */
+        .install-link {
+            display: block;
+            margin-top: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 850px) {
+            body { flex-direction: column; }
+            nav { 
+                width: 100%; 
+                height: auto; 
+                padding: 15px; 
+                position: sticky; 
+                top: 0; 
+                border-right: none; 
+                border-bottom: 1px solid var(--border);
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo { margin-bottom: 0; font-size: 1rem; }
+            .nav-links { display: none; }
+            main { padding: 40px 20px; }
+            header h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <div class="logo">StanckDEV</div>
+        <ul class="nav-links">
+            <li><a href="#gamedev" class="nav-item">01. Videogiochi</a></li>
+            <li><a href="#bots" class="nav-item">02. Bot & Automazione</a></li>
+            <li><a href="#web" class="nav-item">03. Web Front-end</a></li>
+            <li><a href="#cyber" class="nav-item">04. Cybersecurity</a></li>
+            <li><a href="#data" class="nav-item">05. Data Science</a></li>
+            <li><a href="#mobile" class="nav-item">06. App Mobile</a></li>
+            <li><a href="#cloud" class="nav-item">07. Cloud & DevOps</a></li>
+            <li><a href="#lowlevel" class="nav-item">08. Sistemi Low Level</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Migliori Editor <br>in base alle tue esigenze</h1>
+            <p>Una domanda che tutti i futuri programmatori si pongono all'inizio del loro percorso: "come scrivo il codice?". Beh, con un editor, e qui troverai una guida adatta a te.</p>
+        </header>
+
+        <section id="gamedev">
+            <span class="category-info">// 01</span>
+            <h2>Videogiochi</h2>
+            <article class="editor-entry">
+                <h3>Visual Studio Professional</h3>
+                <p class="desc-parlata">Se punti all'industria seria, VS è il punto d'arrivo. È massiccio, mangia RAM a colazione, ma la potenza del suo debugger è fuori discussione. Quando scendi nel profondo del C++, vuoi uno strumento che non tremi.</p>
+                <div class="pro-tip">Ottimo, ma prepara un PC potente o sentirai le ventole decollare.</div>
+                <p class="install-link">Installa l'editor in questo <a href="https://visualstudio.microsoft.com/it/downloads/" target="_blank">link</a></p>
+            </article>
+            <article class="editor-entry">
+                <h3>JetBrains Rider</h3>
+                <p class="desc-parlata">Rider è la freschezza che mancava. Se usi Unity, l'integrazione è quasi magica. Ti suggerisce correzioni che ti salvano ore di mal di testa. È fluido, moderno e molto più intuitivo della concorrenza Microsoft.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://www.jetbrains.com/rider/" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="bots">
+            <span class="category-info">// 02</span>
+            <h2>Bot & Automazione</h2>
+            <article class="editor-entry">
+                <h3>PyCharm</h3>
+                <p class="desc-parlata">Fare bot significa gestire dati e flussi Python. PyCharm è l'assistente che vorresti sempre avere: ti gestisce i pacchetti, le librerie e i database in un'unica finestra. Mai più confusione tra le versioni di Python.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://www.jetbrains.com/pycharm/" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="web">
+            <span class="category-info">// 03</span>
+            <h2>Web Front-end</h2>
+            <article class="editor-entry">
+                <h3>VS Code</h3>
+                <p class="desc-parlata">Il Re del web. È leggero, gratuito e fa tutto. Con le estensioni giuste diventa un mostro di potenza per React, CSS e tutto quello che gira sul browser. Non c'è motivo reale per usare altro se inizi oggi.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://code.visualstudio.com/" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="cyber">
+            <span class="category-info">// 04</span>
+            <h2>Cybersecurity</h2>
+            <article class="editor-entry">
+                <h3>Sublime Text</h3>
+                <p class="desc-parlata">Quando analizzi log enormi, non vuoi che l'editor carichi per mezz'ora. Sublime è istantaneo. È essenziale, pulito e non si mette mai tra te e il tuo lavoro. Puro minimalismo utile.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://www.sublimetext.com/" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="data">
+            <span class="category-info">// 05</span>
+            <h2>Data Science</h2>
+            <article class="editor-entry">
+                <h3>Jupyter Notebook</h3>
+                <p class="desc-parlata">Più che un editor, un diario di bordo per i tuoi dati. Vedere il grafico nascere subito sotto il codice è impagabile quando stai cercando di capire un pattern statistico o addestrare un'AI.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://jupyter.org/install" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="mobile">
+            <span class="category-info">// 06</span>
+            <h2>App Mobile</h2>
+            <article class="editor-entry">
+                <h3>Android Studio</h3>
+                <p class="desc-parlata">L'unico vero modo per fare app Android seriamente. È completo, ma pesante come un macigno. L'emulatore integrato richiede un computer che non scherzi, ma la precisione del codice è assoluta.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://developer.android.com/studio" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="cloud">
+            <span class="category-info">// 07</span>
+            <h2>Cloud & DevOps</h2>
+            <article class="editor-entry">
+                <h3>VS Code (SSH/Docker)</h3>
+                <p class="desc-parlata">La capacità di editare file direttamente dentro un container o su un server in America come se fossero sul tuo desktop è il motivo per cui chi fa Cloud ama VS Code. Semplice ed efficace.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://code.visualstudio.com/docs/remote/remote-overview" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <section id="lowlevel">
+            <span class="category-info">// 08</span>
+            <h2>Sistemi Low Level</h2>
+            <article class="editor-entry">
+                <h3>CLion</h3>
+                <p class="desc-parlata">Per chi parla con l'hardware in C o Rust. CLion ti aiuta a non impazzire con la gestione della memoria, segnalandoti i rischi prima che diventino errori fatali sul chip. Precisione chirurgica.</p>
+                <p class="install-link">Installa l'editor in questo <a href="https://www.jetbrains.com/clion/" target="_blank">link</a></p>
+            </article>
+        </section>
+
+        <footer style="padding: 20px 0; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem;">
+            Scritto da un bravo developer 
+            -StanckDEV
+        </footer>
+    </main>
+
+    <script>
+        // LOGICA SCROLL SPY (Il menù ti segue mentre scorri)
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-item");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
